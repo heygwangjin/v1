@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <script src="http://localhost:8097" async></script>
     </html>
   );
 }
