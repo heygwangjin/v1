@@ -1,4 +1,4 @@
-import ThemeToggle from '@/components/ThemeToggle';
+import Navigator from '@/components/Navigator';
 import { cn } from '@/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -31,7 +31,7 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <ThemeToggle initialTheme={theme as 'light' | 'dark'} />
+        <Navigator theme={theme} />
         {children}
       </body>
       <script src="http://localhost:8097" async></script>
