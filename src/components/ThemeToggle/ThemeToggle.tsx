@@ -35,7 +35,7 @@ function ThemeToggle({ initialTheme }: ThemeToggleProps) {
 
   return (
     <button
-      className="flex justify-center items-center w-16 h-16 border-none rounded-full bg-transparent text-inherit cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800/30"
+      className="flex justify-center items-center w-16 h-16 border-none rounded-full bg-transparent text-inherit cursor-pointer hover:transform hover:scale-110 duration-300 transition-transform opacity-80 hover:opacity-100"
       aria-label="Toggle dark / light mode"
       onClick={handleClick}
     >
