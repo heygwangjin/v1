@@ -21,7 +21,9 @@ export default function About() {
             />
             <div>
               <h1 className="font-semibold">Gwangjin Kim</h1>
-              <p className="text-sm text-neutral-500">Software Developer</p>
+              <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                Software Developer
+              </p>
             </div>
           </div>
           <DownloadPdfButton href="/resume.pdf" label="Resume" />
