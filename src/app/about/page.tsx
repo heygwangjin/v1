@@ -1,5 +1,8 @@
 import Avatar from '@/components/Avatar';
 import DownloadPdfButton from '@/components/DownloadPdfButton';
+import Education from '@/components/Education';
+import HorizontalDashedLine from '@/components/HorizontalDashedLine';
+import WorkExperience from '@/components/WorkExperience';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -21,12 +24,31 @@ export default function About() {
             />
             <div>
               <h1 className="font-semibold">Gwangjin Kim</h1>
-              <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                Software Developer
-              </p>
+              <p className="text-sm text-neutral-500">Software Developer</p>
             </div>
           </div>
           <DownloadPdfButton href="/resume.pdf" label="Resume" />
+        </div>
+        <div className="w-full flex flex-col justify-between items-center gap-2 text-neutral-700 dark:text-neutral-300 leading-7 break-words">
+          <p className="w-full">
+            I am a software developer based in South Korea. I have experience in
+            web development, especially in hybrid applications. I am currently
+            working as a full-stack developer at a startup, where I use
+            SvelteKit, Supabase and TailwindCSS.
+          </p>
+          <p className="w-full">
+            Recently, I have been learning React, TypeScript, and Next.js to
+            further expand my knowledge and experience in frontend web
+            development.
+          </p>
+        </div>
+        <HorizontalDashedLine />
+        <div className="w-full flex flex-col gap-4 text-neutral-700 dark:text-neutral-300">
+          <WorkExperience />
+        </div>
+        <HorizontalDashedLine />
+        <div className="w-full flex flex-col gap-4 text-neutral-700 dark:text-neutral-300">
+          <Education />
         </div>
       </div>
     </main>
