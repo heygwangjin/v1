@@ -26,7 +26,7 @@ function MainMenu() {
     <MenuWrapper>
       <ul className="flex items-center justify-between rounded-full w-full sm:w-fit">
         {links.map(({ href, label }) => (
-          <li key={href} className="py-2 px-4">
+          <li key={href} className="py-3 px-4">
             <Link
               href={href}
               className={cn(
