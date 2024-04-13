@@ -8,7 +8,7 @@ function WorkExperience() {
     <>
       <div className="flex justify-start items-center gap-1">
         <WorkExperienceIcon />
-        <h2 className="font-medium">Work Experience</h2>
+        <h2 className="font-medium text-lg">Work Experience</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {data.experience.map((work, index) => {
@@ -16,7 +16,7 @@ function WorkExperience() {
           return (
             <div
               key={'work-experience-' + index}
-              className="w-full flex flex-col justify-start items-start gap-2"
+              className="w-full flex flex-col justify-start items-start gap-1"
             >
               <h3 className="font-medium">{role}</h3>
               <p className="text-sm text-neutral-500">

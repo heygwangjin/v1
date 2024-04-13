@@ -2,6 +2,7 @@ import Avatar from '@/components/Avatar';
 import DownloadPdfButton from '@/components/DownloadPdfButton';
 import Education from '@/components/Education';
 import HorizontalDashedLine from '@/components/HorizontalDashedLine';
+import MobileSocialLink from '@/components/MobileSocialLink';
 import WorkExperience from '@/components/WorkExperience';
 import { Metadata } from 'next';
 
@@ -42,7 +43,8 @@ export default function About() {
             development.
           </p>
         </div>
-        <HorizontalDashedLine />
+        <HorizontalDashedLine className="hidden sm:block" />
+        <MobileSocialLinks />
         <div className="w-full flex flex-col gap-4 text-neutral-700 dark:text-neutral-300">
           <WorkExperience />
         </div>
@@ -50,7 +52,21 @@ export default function About() {
         <div className="w-full flex flex-col gap-4 text-neutral-700 dark:text-neutral-300">
           <Education />
         </div>
+        <HorizontalDashedLine className="sm:hidden" />
       </div>
     </main>
+  );
+}
+
+function MobileSocialLinks() {
+  return (
+    <>
+      <HorizontalDashedLine className="sm:hidden" />
+      <div className="w-full grid sm:hidden grid-cols-2">
+        <MobileSocialLink type="github" />
+        <MobileSocialLink type="x" />
+      </div>
+      <HorizontalDashedLine className="sm:hidden" />
+    </>
   );
 }

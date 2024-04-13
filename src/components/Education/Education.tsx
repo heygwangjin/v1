@@ -7,7 +7,7 @@ function Education() {
     <>
       <div className="flex justify-start items-center gap-1">
         <EducationIcon />
-        <h2 className="font-medium">Education</h2>
+        <h2 className="font-medium text-lg">Education</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {data.education.map((study, index) => {
