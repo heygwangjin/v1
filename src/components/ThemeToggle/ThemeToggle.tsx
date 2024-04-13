@@ -1,8 +1,8 @@
 'use client';
 import Cookies from 'js-cookie';
 import React from 'react';
-import { Moon, Sun } from 'react-feather';
 
+import ThemeIcon from '@/components/ThemeIcon';
 import VisuallyHidden from '@/components/VisuallyHidden';
 
 interface ThemeToggleProps {
@@ -34,14 +34,17 @@ function ThemeToggle({ initialTheme }: ThemeToggleProps) {
   }
 
   return (
-    <button
-      className="flex justify-center items-center w-16 h-16 border-none rounded-full bg-transparent text-inherit cursor-pointer hover:transform hover:scale-110 duration-300 transition-transform opacity-80 hover:opacity-100"
-      aria-label="Toggle dark / light mode"
-      onClick={handleClick}
-    >
-      {theme === 'light' ? <Sun size="1.5rem" /> : <Moon size="1.5rem" />}
-      <VisuallyHidden>Toggle dark / light mode</VisuallyHidden>
-    </button>
+    <div className="bg-neutral-200 dark:bg-neutral-800 p-px rounded-full relative shadow-sm shadow-neutral-400 dark:shadow-black z-0 shrink-0">
+      <button
+        className="bg-gradient-to-tl from-neutral-50 dark:from-neutral-925 via-neutral-200 dark:via-neutral-900 to-neutral-50 dark:to-neutral-925 p-2 rounded-full relative z-20 group  outline-none focus-visible:ring-1 ring-neutral-950 dark:ring-neutral-50"
+        aria-label="Theme Control"
+        onClick={handleClick}
+      >
+        <ThemeIcon theme={theme} />
+        <VisuallyHidden>Toggle dark / light mode</VisuallyHidden>
+      </button>
+      <div className="absolute top-0 left-0 h-full w-full rounded-full bg-gradient-to-br from-transparent from-30% via-neutral-300 dark:via-neutral-750 to-60% to-transparent -z-10" />
+    </div>
   );
 }
 
