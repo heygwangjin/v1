@@ -1,2 +1,2 @@
-export * from './HorizontalDashedLine';
-export { default } from './HorizontalDashedLine';
+export * from "./HorizontalDashedLine";
+export { default } from "./HorizontalDashedLine";

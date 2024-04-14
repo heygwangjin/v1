@@ -1,5 +1,5 @@
-import { cn } from '@/utils';
-import Image from 'next/image';
+import { cn } from "@/utils";
+import Image from "next/image";
 
 interface AvatarProps {
   src: string;
@@ -15,7 +15,7 @@ function Avatar({ src, alt, size = 40, className, ...props }: AvatarProps) {
       alt={alt}
       width={size}
       height={size}
-      className={cn('rounded-full', className)}
+      className={cn("rounded-full", className)}
       {...props}
     />
   );

@@ -1,2 +1,2 @@
-export * from './GithubIcon';
-export { default } from './GithubIcon';
+export * from "./GithubIcon";
+export { default } from "./GithubIcon";

@@ -4,11 +4,11 @@ interface TechnologiesListProps {
 
 function TechnologiesList({ technologies }: TechnologiesListProps) {
   return (
-    <div className="w-full flex justify-start items-center gap-2 flex-wrap py-2">
+    <div className="flex w-full flex-wrap items-center justify-start gap-2 py-2">
       {technologies.map((technology) => (
         <span
           key={technology}
-          className="text-xs text-neutral-500 dark:text-neutral-400 font-geistmono bg-neutral-250 dark:bg-neutral-850 px-2 py-1 rounded-md"
+          className="font-geistmono rounded-md bg-neutral-250 px-2 py-1 text-xs text-neutral-500 dark:bg-neutral-850 dark:text-neutral-400"
         >
           {technology}
         </span>

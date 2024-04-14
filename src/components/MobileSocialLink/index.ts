@@ -1,2 +1,2 @@
-export * from './MobileSocialLink';
-export { default } from './MobileSocialLink';
+export * from "./MobileSocialLink";
+export { default } from "./MobileSocialLink";

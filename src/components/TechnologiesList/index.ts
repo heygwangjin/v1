@@ -1,2 +1,2 @@
-export * from './TechnologiesList';
-export { default } from './TechnologiesList';
+export * from "./TechnologiesList";
+export { default } from "./TechnologiesList";

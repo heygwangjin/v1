@@ -1,2 +1,2 @@
-export * from './SocialMenu';
-export { default } from './SocialMenu';
+export * from "./SocialMenu";
+export { default } from "./SocialMenu";

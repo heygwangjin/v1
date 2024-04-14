@@ -1,4 +1,4 @@
-import { cn } from '@/utils';
+import { cn } from "@/utils";
 
 interface MenuWrapperProps {
   children: React.ReactNode;
@@ -9,11 +9,11 @@ function MenuWrapper({ children, showOnMobile = true }: MenuWrapperProps) {
   return (
     <div
       className={cn(
-        'bg-neutral-200 dark:bg-neutral-800 p-px rounded-full overflow-hidden relative shadow-sm shadow-neutral-400 dark:shadow-black z-0 shrink-0 dark:border dark:border-neutral-600',
-        showOnMobile ? 'block' : 'hidden sm:block'
+        "relative z-0 shrink-0 overflow-hidden rounded-full bg-neutral-200 p-px shadow-sm shadow-neutral-400 dark:border dark:border-neutral-600 dark:bg-neutral-800 dark:shadow-black",
+        showOnMobile ? "block" : "hidden sm:block",
       )}
     >
-      <div className="bg-neutral-50 dark:bg-neutral-925 px-1 rounded-full relative flex justify-between items-center gap-4">
+      <div className="relative flex items-center justify-between gap-4 rounded-full bg-neutral-50 px-1 dark:bg-neutral-925">
         {children}
       </div>
     </div>

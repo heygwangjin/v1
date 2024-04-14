@@ -7,7 +7,7 @@
 // Adding “display: none” would hide the
 // element from ALL users, including those
 // using screen-readers.
-import { cn } from '@/utils';
+import { cn } from "@/utils";
 
 interface VisuallyHiddenProps extends React.HTMLAttributes<HTMLSpanElement> {
   as?: React.ElementType;
@@ -16,13 +16,13 @@ interface VisuallyHiddenProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 function VisuallyHidden({
-  as: Element = 'span',
+  as: Element = "span",
   className,
   children,
   ...props
 }: VisuallyHiddenProps) {
   return (
-    <Element className={cn('sr-only', className)} {...props}>
+    <Element className={cn("sr-only", className)} {...props}>
       {children}
     </Element>
   );

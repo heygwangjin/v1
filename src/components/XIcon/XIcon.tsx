@@ -1,4 +1,4 @@
-import { cn } from '@/utils';
+import { cn } from "@/utils";
 
 interface XIconProps {
   className?: string;
@@ -8,10 +8,10 @@ function XIcon({ className }: XIconProps) {
   return (
     <svg
       className={cn(
-        'size-4 text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-950 dark:group-hover:text-neutral-50 transition-all duration-150 pointer-events-none',
-        'drop-shadow-none group-hover:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-hover:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]',
-        'group-focus:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-focus:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]',
-        className
+        "pointer-events-none size-4 text-neutral-600 transition-all duration-150 group-hover:text-neutral-950 dark:text-neutral-400 dark:group-hover:text-neutral-50",
+        "drop-shadow-none group-hover:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-hover:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]",
+        "group-focus:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-focus:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]",
+        className,
       )}
       role="img"
       viewBox="0 0 24 24"
