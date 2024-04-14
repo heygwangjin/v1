@@ -38,7 +38,7 @@ function MobileSocialLink({ type }: MobileSocialLinkProps) {
     <Link
       href={href}
       target="_blank"
-      className="flex h-full w-full items-center justify-center text-neutral-700 dark:text-neutral-200"
+      className="flex w-full items-center justify-center text-neutral-700 dark:text-neutral-200"
       aria-label={label}
     >
       {type === "github" && <GithubIcon className="size-8" />}
