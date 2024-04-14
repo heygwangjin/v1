@@ -1,7 +1,7 @@
-import MenuWrapper from "@/components/MenuWrapper";
 import GithubIcon from "@/components/GithubIcon";
-import XIcon from "@/components/XIcon";
 import IconLinkWrapper from "@/components/IconLinkWrapper";
+import MenuWrapper from "@/components/MenuWrapper";
+import XIcon from "@/components/XIcon";
 
 function SocialMenu() {
   return (
