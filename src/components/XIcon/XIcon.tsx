@@ -13,59 +13,13 @@ function XIcon({ className }: XIconProps) {
         "group-focus:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-focus:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]",
         className,
       )}
+      fill="currentColor"
       role="img"
-      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
     >
       <title>X</title>
-      <g fill="currentColor">
-        <path d="M1 2h2.5L3.5 2h-2.5z">
-          <animate
-            fill="freeze"
-            attributeName="d"
-            dur="0.4s"
-            values="M1 2h2.5L3.5 2h-2.5z;M1 2h2.5L18.5 22h-2.5z"
-          />
-        </path>
-        <path d="M5.5 2h2.5L7.2 2h-2.5z">
-          <animate
-            fill="freeze"
-            attributeName="d"
-            dur="0.4s"
-            values="M5.5 2h2.5L7.2 2h-2.5z;M5.5 2h2.5L23 22h-2.5z"
-          />
-        </path>
-        <path d="M3 2h5v0h-5z" opacity="0">
-          <set attributeName="opacity" begin="0.4s" to="1" />
-          <animate
-            fill="freeze"
-            attributeName="d"
-            begin="0.4s"
-            dur="0.4s"
-            values="M3 2h5v0h-5z;M3 2h5v2h-5z"
-          />
-        </path>
-        <path d="M16 22h5v0h-5z" opacity="0">
-          <set attributeName="opacity" begin="0.4s" to="1" />
-          <animate
-            fill="freeze"
-            attributeName="d"
-            begin="0.4s"
-            dur="0.4s"
-            values="M16 22h5v0h-5z;M16 22h5v-2h-5z"
-          />
-        </path>
-        <path d="M18.5 2h3.5L22 2h-3.5z" opacity="0">
-          <set attributeName="opacity" begin="0.5s" to="1" />
-          <animate
-            fill="freeze"
-            attributeName="d"
-            begin="0.5s"
-            dur="0.4s"
-            values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z"
-          />
-        </path>
-      </g>
+      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
     </svg>
   );
 }
