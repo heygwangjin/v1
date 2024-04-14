@@ -1,8 +1,8 @@
 import GithubIcon from "@/components/GithubIcon";
 import IconLinkWrapper from "@/components/IconLinkWrapper";
+import MailIcon from "@/components/MailIcon";
 import MenuWrapper from "@/components/MenuWrapper";
 import XIcon from "@/components/XIcon";
-import MailIcon from "@/components/MailIcon";
 
 function SocialMenu() {
   return (

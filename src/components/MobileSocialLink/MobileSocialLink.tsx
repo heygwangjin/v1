@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 import GithubIcon from "@/components/GithubIcon";
-import XIcon from "@/components/XIcon";
 import MailIcon from "@/components/MailIcon";
+import XIcon from "@/components/XIcon";
 
 interface MobileSocialLinkProps {
   type: "github" | "x" | "mail";

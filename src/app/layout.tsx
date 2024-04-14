@@ -1,9 +1,9 @@
 import Navigator from "@/components/Navigator";
 import { cn } from "@/utils";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cookies } from "next/headers";
-import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   description: "Web developer based in Suwon, South Korea.",
   icons: {
-    icon: '/favicon.png',
+    icon: "/favicon.png",
   },
 };
 
