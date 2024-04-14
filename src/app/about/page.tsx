@@ -18,7 +18,7 @@ export default function About() {
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-4">
             <Avatar
-              src="/me.jpg"
+              src="/images/me.jpg"
               alt="gwangjin's profile picture"
               size={70}
               className="border border-dashed border-neutral-500 p-1"
