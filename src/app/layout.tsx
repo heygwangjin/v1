@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: "%s | heygwangjin · web developer",
   },
   description: "Web developer based in Suwon, South Korea.",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
