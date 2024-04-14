@@ -2,9 +2,10 @@ import Link from "next/link";
 
 import GithubIcon from "@/components/GithubIcon";
 import XIcon from "@/components/XIcon";
+import MailIcon from "@/components/MailIcon";
 
 interface MobileSocialLinkProps {
-  type: "github" | "x";
+  type: "github" | "x" | "mail";
 }
 
 type socialLinksType = {
@@ -27,6 +28,10 @@ function MobileSocialLink({ type }: MobileSocialLinkProps) {
       href: "https://www.twitter.com/heygwangjin",
       label: "X",
     },
+    mail: {
+      href: "mailto:heygwangjin@gmail.com",
+      label: "Mail",
+    },
   };
 
   if (type in socialLinks) {
@@ -43,6 +48,7 @@ function MobileSocialLink({ type }: MobileSocialLinkProps) {
     >
       {type === "github" && <GithubIcon className="size-8" />}
       {type === "x" && <XIcon className="size-8" />}
+      {type === "mail" && <MailIcon className="size-8" />}
     </Link>
   );
 }

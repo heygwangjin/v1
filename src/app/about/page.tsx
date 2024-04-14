@@ -62,9 +62,10 @@ function MobileSocialLinks() {
   return (
     <>
       <HorizontalDashedLine className="sm:hidden" />
-      <div className="grid w-full grid-cols-2 sm:hidden">
+      <div className="grid w-full grid-cols-3 sm:hidden">
         <MobileSocialLink type="github" />
         <MobileSocialLink type="x" />
+        <MobileSocialLink type="mail" />
       </div>
       <HorizontalDashedLine className="sm:hidden" />
     </>
