@@ -7,13 +7,10 @@ interface MailIconProps {
 function MailIcon({ className }: MailIconProps) {
   return (
     <svg
-      width="24px"
-      height="24px"
-      // viewBox="-2.4 -2.4 28.80 28.80"
+      id="mail"
+      fill="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      id="mail"
-      fill="#000000"
       transform="matrix(1, 0, 0, 1, 0, 0)"
       className={cn(
         "pointer-events-none size-4 text-neutral-600 transition-all duration-150 group-hover:text-neutral-950 dark:text-neutral-400 dark:group-hover:text-neutral-50",
@@ -23,11 +20,11 @@ function MailIcon({ className }: MailIconProps) {
       )}
     >
       <title>mail</title>
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <path d="M22,8.32V18a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V8.69L4,9.78l7.52,4.1A1,1,0,0,0,12,14a1,1,0,0,0,.5-.14L20,9.49Z"></path>
