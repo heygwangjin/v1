@@ -19,7 +19,7 @@ function TypeWords() {
       ]}
       wrapper="span"
       repeat={Infinity}
-      className="text-3xl lg:text-7xl"
+      className="text-3xl md:text-4xl lg:text-7xl"
     />
   );
 }
