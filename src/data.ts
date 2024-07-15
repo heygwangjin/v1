@@ -5,7 +5,7 @@ export const data = {
       url: "https://insomenia.com",
       role: "Junior Full Stack Developer",
       location: "Seoul, South Korea",
-      date: "2022.07 - present",
+      date: "2023.01 - 2024.07",
       descriptions: [],
       technologies: ["SvelteKit", "Supabase", "TailwindCSS", "Vercel", "Git"],
     },
