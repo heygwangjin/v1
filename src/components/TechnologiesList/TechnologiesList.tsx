@@ -8,7 +8,7 @@ function TechnologiesList({ technologies }: TechnologiesListProps) {
       {technologies.map((technology) => (
         <span
           key={technology}
-          className="font-geistmono rounded-md bg-neutral-250 px-2 py-1 text-xs text-neutral-500 dark:bg-neutral-850 dark:text-neutral-400"
+          className="rounded-md bg-neutral-250 px-2 py-1 text-xs text-neutral-500 dark:bg-neutral-850 dark:text-neutral-400"
         >
           {technology}
         </span>
