@@ -37,9 +37,6 @@ export default function RootLayout({
         {children}
         <Analytics />
       </body>
-      {process.env.NODE_ENV === "development" && (
-        <script src="http://localhost:8097" async></script>
-      )}
     </html>
   );
 }
