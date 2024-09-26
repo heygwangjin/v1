@@ -1,7 +1,7 @@
 export const data = {
   experience: [
     {
-      company: "insomenia",
+      company: "INSOMENIA",
       url: "https://insomenia.com",
       role: "Junior Full Stack Engineer",
       location: "Seoul, South Korea",
@@ -12,7 +12,7 @@ export const data = {
   ],
   education: [
     {
-      school: "Ajou University",
+      school: "AJOU UNIVERSITY",
       url: "https://www.ajou.ac.kr",
       degree: "Bachelor of Digital Media",
       location: "Suwon, South Korea",
