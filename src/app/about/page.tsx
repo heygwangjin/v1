@@ -35,7 +35,10 @@ export default function About() {
             I am a Software Engineer with a passion for web development and design. I worked at a startup agency where I developed web applications from the ground up, including design and communication with clients.
           </p>
           <p className="w-full">
-            If I'm not in front of my laptop, I'm most likely swimming, reading a book or walking with my dog.
+            If I&apos;m not in front of my laptop, I&apos;m most likely swimming, reading or walking with my dog.
+          </p>
+          <p className="w-full">
+            I am open to working in Malaysia 🇲🇾 or Singapore 🇸🇬, so feel free to contact me if you have any opportunities.
           </p>
         </div>
         <HorizontalDashedLine className="hidden sm:block" />
