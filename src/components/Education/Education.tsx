@@ -9,7 +9,7 @@ function Education() {
         <EducationIcon />
         <h2 className="text-lg font-medium">Education</h2>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4">
         {data.education.map((study, index) => {
           const { school, url, degree, location, date, grade } = study;
           return (
@@ -18,17 +18,17 @@ function Education() {
               className="flex w-full flex-col items-start justify-start gap-1"
             >
               <h3 className="text-balance font-medium">{degree}</h3>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-foreground/50">
                 <a
                   href={url}
                   target="_blank"
-                  className="underline transition-colors duration-150 hover:text-neutral-700 dark:hover:text-neutral-300"
+                  className="underline transition-colors duration-150 hover:text-foreground/80"
                 >
                   {school}
                 </a>{" "}
                 / {date}
               </p>
-              <p className="text-sm text-neutral-500">Grade: {grade}</p>
+              <p className="text-sm text-foreground/50">Grade: {grade}</p>
             </div>
           );
         })}

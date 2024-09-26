@@ -7,7 +7,7 @@
 // Adding “display: none” would hide the
 // element from ALL users, including those
 // using screen-readers.
-import { cn } from "@/utils";
+import { cn } from "@/lib/utils";
 
 interface VisuallyHiddenProps extends React.HTMLAttributes<HTMLSpanElement> {
   as?: React.ElementType;

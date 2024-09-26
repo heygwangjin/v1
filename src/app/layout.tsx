@@ -1,7 +1,7 @@
 import Navigator from "@/components/Navigator";
+import { cn } from "@/lib/utils";
 import { pretendard } from "@/styles/fonts";
 import "@/styles/globals.css";
-import { cn } from "@/utils";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" data-color-theme={theme} className={theme}>
       <body
         className={cn(
-          "relative z-10 overflow-x-hidden bg-neutral-200 text-neutral-950 dark:bg-neutral-925 dark:text-neutral-50",
+          "relative z-10 overflow-x-hidden bg-background text-foreground",
           pretendard.className,
         )}
       >

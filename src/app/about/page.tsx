@@ -20,17 +20,19 @@ export default function About() {
             <Avatar
               src="/images/me.jpg"
               alt="gwangjin's profile picture"
-              size={70}
-              className="border border-dashed border-neutral-500 p-1"
+              size={90}
+              className="border border-dashed border-primary/70 p-1"
             />
             <div>
-              <h1 className="font-semibold">Gwangjin Kim</h1>
-              <p className="text-sm text-neutral-500">Software Developer</p>
+              <h1 className="text-xl font-semibold">Gwangjin Kim</h1>
+              <p className="text-sm text-foreground/60">
+                Software Engineer (Frontend)
+              </p>
             </div>
           </div>
           <DownloadPdfButton href="/resume.pdf" label="Resume" />
         </div>
-        <div className="flex w-full flex-col items-center justify-between gap-2 break-words leading-7 text-neutral-700 dark:text-neutral-300">
+        <div className="flex w-full flex-col items-center justify-between gap-2 break-words leading-7 text-foreground">
           <p className="w-full">
             I am a software developer based in South Korea. I have experience in
             web development, especially in hybrid applications. I am currently
@@ -45,11 +47,11 @@ export default function About() {
         </div>
         <HorizontalDashedLine className="hidden sm:block" />
         <MobileSocialLinks />
-        <div className="flex w-full flex-col gap-4 text-neutral-700 dark:text-neutral-300">
+        <div className="flex w-full flex-col gap-4 text-foreground">
           <WorkExperience />
         </div>
         <HorizontalDashedLine />
-        <div className="flex w-full flex-col gap-4 text-neutral-700 dark:text-neutral-300">
+        <div className="flex w-full flex-col gap-4 text-foreground">
           <Education />
         </div>
         <HorizontalDashedLine className="sm:hidden" />
