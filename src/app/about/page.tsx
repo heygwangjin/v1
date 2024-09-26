@@ -14,35 +14,28 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main className="flex w-full justify-center px-4 pb-28 pt-8 sm:px-8 sm:pt-16 lg:pb-16 lg:pt-36 xl:px-0">
-      <div className="flex h-full w-full max-w-screen-sm flex-col items-center justify-start gap-8">
+      <div className="flex h-full w-full max-w-screen-sm flex-col items-center justify-start gap-6">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-4">
             <Avatar
               src="/images/me.jpg"
               alt="gwangjin's profile picture"
-              size={90}
               className="border border-dashed border-primary/70 p-1"
             />
             <div>
-              <h1 className="text-xl font-semibold">Gwangjin Kim</h1>
-              <p className="text-sm text-foreground/60">
-                Software Engineer (Frontend)
-              </p>
+              <h1 className="text-xl font-bold">Gwangjin Kim</h1>
+              <p>Frontend Engineer</p>
+              <p className="text-sm text-foreground/60">Seoul, South Korea</p>
             </div>
           </div>
           <DownloadPdfButton href="/resume.pdf" label="Resume" />
         </div>
         <div className="flex w-full flex-col items-center justify-between gap-2 break-words leading-7 text-foreground">
           <p className="w-full">
-            I am a software developer based in South Korea. I have experience in
-            web development, especially in hybrid applications. I am currently
-            working as a full-stack developer at a startup, where I use
-            SvelteKit, Supabase and TailwindCSS.
+            I am a Software Engineer with a passion for web development and design. I worked at a startup agency where I developed web applications from the ground up, including design and communication with clients.
           </p>
           <p className="w-full">
-            Recently, I have been learning React, TypeScript, and Next.js to
-            further expand my knowledge and experience in frontend web
-            development.
+            If I'm not in front of my laptop, I'm most likely swimming, reading a book or walking with my dog.
           </p>
         </div>
         <HorizontalDashedLine className="hidden sm:block" />
