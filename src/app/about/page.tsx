@@ -35,18 +35,18 @@ export default function About() {
 
         <div className="flex w-full flex-col items-center justify-between gap-2 break-words leading-7 text-foreground">
           <p className="w-full">
-            I am a Software Engineer with a passion for web development and
+            I am a software engineer passionate about web development and
             design. I worked at a startup agency where I developed web
-            applications from the ground up, including design and communication
-            with clients.
+            applications from scratch, handling both design and client
+            communication.
           </p>
           <p className="w-full">
-            If I&apos;m not in front of my laptop, I&apos;m most likely
-            swimming, reading or walking with my dog.
+            When I&apos;m not in front of my laptop, I&apos;m most likely
+            swimming, reading, or walking my dog.
           </p>
           <p className="w-full">
-            I am open to working in Malaysia 🇲🇾 or Singapore 🇸🇬, so feel free to
-            contact me if you have any opportunities.
+            I&apos;m open to working in Malaysia 🇲🇾 or Singapore 🇸🇬, so please
+            feel free to contact me if you have any opportunities.
           </p>
         </div>
         <HorizontalDashedLine className="hidden sm:block" />
