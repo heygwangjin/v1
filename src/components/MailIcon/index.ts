@@ -1,2 +1,2 @@
-export * from "./MailIcon";
-export { default } from "./MailIcon";
+export * from './MailIcon';
+export { default } from './MailIcon';

@@ -1,2 +1,2 @@
-export * from "./TypeWords";
-export { default } from "./TypeWords";
+export * from './TypeWords';
+export { default } from './TypeWords';

@@ -5,7 +5,7 @@ interface TechnologiesListProps {
 function TechnologiesList({ technologies }: TechnologiesListProps) {
   return (
     <div className="flex w-full flex-wrap items-center justify-start gap-2 py-2">
-      {technologies.map((technology) => (
+      {technologies.map(technology => (
         <span
           key={technology}
           className="rounded-md border px-2 py-1 text-xs text-foreground/60"

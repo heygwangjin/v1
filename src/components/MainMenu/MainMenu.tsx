@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import MenuWrapper from "@/components/MenuWrapper";
+import MenuWrapper from '@/components/MenuWrapper';
 
 function MainMenu() {
   const links: { href: string; label: string }[] = [
     {
-      href: "/",
-      label: "Home",
+      href: '/',
+      label: 'Home',
     },
     {
-      href: "/about",
-      label: "About",
+      href: '/about',
+      label: 'About',
     },
   ];
 
@@ -30,21 +30,21 @@ function MainMenu() {
             <Link
               href={href}
               className={cn(
-                "group rounded-full outline-none transition-colors duration-300 hover:text-neutral-950 focus-visible:text-neutral-950 dark:hover:text-neutral-50 dark:focus-visible:text-neutral-50",
+                'group rounded-full outline-none transition-colors duration-300 hover:text-neutral-950 focus-visible:text-neutral-950 dark:hover:text-neutral-50 dark:focus-visible:text-neutral-50',
                 activeLink?.href === href
-                  ? "font-semibold text-neutral-950 dark:text-neutral-50"
-                  : "text-neutral-500 dark:text-neutral-400",
+                  ? 'font-semibold text-neutral-950 dark:text-neutral-50'
+                  : 'text-neutral-500 dark:text-neutral-400',
               )}
             >
               <span
                 className={cn(
-                  "z-30 text-sm sm:text-sm",
-                  "[text-shadow:_0_0_1.25rem_rgba(10,10,10,0)] dark:[text-shadow:0_0_0.75rem_rgba(250,250,250,0)]",
-                  "group-hover:[text-shadow:_0_0_1.25rem_rgba(10,10,10,1)] dark:group-hover:[text-shadow:0_0_0.75rem_rgba(250,250,250,1)]",
-                  "group-focus:[text-shadow:_0_0_1.25rem_rgba(10,10,10,1)] dark:group-focus:[text-shadow:0_0_0.75rem_rgba(250,250,250,1)]",
-                  "transition-[text-shadow] duration-300",
+                  'z-30 text-sm sm:text-sm',
+                  '[text-shadow:_0_0_1.25rem_rgba(10,10,10,0)] dark:[text-shadow:0_0_0.75rem_rgba(250,250,250,0)]',
+                  'group-hover:[text-shadow:_0_0_1.25rem_rgba(10,10,10,1)] dark:group-hover:[text-shadow:0_0_0.75rem_rgba(250,250,250,1)]',
+                  'group-focus:[text-shadow:_0_0_1.25rem_rgba(10,10,10,1)] dark:group-focus:[text-shadow:0_0_0.75rem_rgba(250,250,250,1)]',
+                  'transition-[text-shadow] duration-300',
                   activeLink?.href === href &&
-                    "[text-shadow:_0_0_1.25rem_rgba(10,10,10,1)] dark:[text-shadow:0_0_0.75rem_rgba(250,250,250,1)]",
+                    '[text-shadow:_0_0_1.25rem_rgba(10,10,10,1)] dark:[text-shadow:0_0_0.75rem_rgba(250,250,250,1)]',
                 )}
               >
                 {label}

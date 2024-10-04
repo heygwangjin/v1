@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* text selection */
-[data-color-theme="dark"] *::selection {
+[data-color-theme='dark'] *::selection {
   @apply !bg-neutral-50 !text-neutral-950;
 }
-[data-color-theme="light"] *::selection {
+[data-color-theme='light'] *::selection {
   @apply !bg-neutral-950 !text-neutral-50;
 }
 @layer base {

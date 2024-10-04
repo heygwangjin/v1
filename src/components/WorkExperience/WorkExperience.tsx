@@ -1,7 +1,7 @@
-import { data } from "@/data";
+import { data } from '@/data';
 
-import TechnologiesList from "@/components/TechnologiesList";
-import WorkExperienceIcon from "@/components/WorkExperienceIcon";
+import TechnologiesList from '@/components/TechnologiesList';
+import WorkExperienceIcon from '@/components/WorkExperienceIcon';
 
 function WorkExperience() {
   return (
@@ -15,7 +15,7 @@ function WorkExperience() {
           const { company, url, role, location, date, descriptions } = work;
           return (
             <div
-              key={"work-experience-" + index}
+              key={'work-experience-' + index}
               className="flex w-full flex-col items-start justify-start gap-1"
             >
               <h3 className="font-medium">{role}</h3>
@@ -26,7 +26,7 @@ function WorkExperience() {
                   className="underline transition-colors duration-150 hover:text-foreground/80"
                 >
                   {company}
-                </a>{" "}
+                </a>{' '}
                 / {date}
               </p>
               <TechnologiesList technologies={work.technologies} />

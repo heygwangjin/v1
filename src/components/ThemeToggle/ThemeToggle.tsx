@@ -1,33 +1,33 @@
-"use client";
-import Cookies from "js-cookie";
-import React from "react";
+'use client';
+import Cookies from 'js-cookie';
+import React from 'react';
 
-import ThemeIcon from "@/components/ThemeIcon";
-import VisuallyHidden from "@/components/VisuallyHidden";
+import ThemeIcon from '@/components/ThemeIcon';
+import VisuallyHidden from '@/components/VisuallyHidden';
 
 interface ThemeToggleProps {
-  initialTheme: "light" | "dark";
+  initialTheme: 'light' | 'dark';
 }
 
 function ThemeToggle({ initialTheme }: ThemeToggleProps) {
   const [theme, setTheme] = React.useState(initialTheme);
 
   function handleClick(): void {
-    const nextTheme = theme === "light" ? "dark" : "light";
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
 
-    Cookies.set("color-theme", nextTheme, {
+    Cookies.set('color-theme', nextTheme, {
       expires: 1000,
     });
 
     const root = document.documentElement;
 
-    root.setAttribute("data-color-theme", nextTheme);
+    root.setAttribute('data-color-theme', nextTheme);
 
-    if (nextTheme === "dark") {
-      root.classList.remove("light");
-      root.classList.add("dark");
+    if (nextTheme === 'dark') {
+      root.classList.remove('light');
+      root.classList.add('dark');
     } else {
-      root.removeAttribute("class");
+      root.removeAttribute('class');
     }
 
     setTheme(nextTheme);

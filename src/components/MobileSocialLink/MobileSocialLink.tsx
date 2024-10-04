@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import GithubIcon from "@/components/GithubIcon";
-import MailIcon from "@/components/MailIcon";
-import XIcon from "@/components/XIcon";
+import GithubIcon from '@/components/GithubIcon';
+import MailIcon from '@/components/MailIcon';
+import XIcon from '@/components/XIcon';
 
 interface MobileSocialLinkProps {
-  type: "github" | "x" | "mail";
+  type: 'github' | 'x' | 'mail';
 }
 
 type socialLinksType = {
@@ -16,21 +16,21 @@ type socialLinksType = {
 };
 
 function MobileSocialLink({ type }: MobileSocialLinkProps) {
-  let href = "";
-  let label = "";
+  let href = '';
+  let label = '';
 
   const socialLinks: socialLinksType = {
     github: {
-      href: "https://github.com/heygwangjin",
-      label: "GitHub",
+      href: 'https://github.com/heygwangjin',
+      label: 'GitHub',
     },
     x: {
-      href: "https://www.twitter.com/heygwangjin",
-      label: "X",
+      href: 'https://www.twitter.com/heygwangjin',
+      label: 'X',
     },
     mail: {
-      href: "mailto:heygwangjin@gmail.com",
-      label: "Mail",
+      href: 'mailto:heygwangjin@gmail.com',
+      label: 'Mail',
     },
   };
 
@@ -46,9 +46,9 @@ function MobileSocialLink({ type }: MobileSocialLinkProps) {
       className="flex w-full items-center justify-center text-foreground"
       aria-label={label}
     >
-      {type === "github" && <GithubIcon className="size-8" />}
-      {type === "x" && <XIcon className="size-8" />}
-      {type === "mail" && <MailIcon className="size-8" />}
+      {type === 'github' && <GithubIcon className="size-8" />}
+      {type === 'x' && <XIcon className="size-8" />}
+      {type === 'mail' && <MailIcon className="size-8" />}
     </Link>
   );
 }

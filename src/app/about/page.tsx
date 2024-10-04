@@ -1,14 +1,14 @@
-import Avatar from "@/components/Avatar";
-import DownloadPdfButton from "@/components/DownloadPdfButton";
-import Education from "@/components/Education";
-import HorizontalDashedLine from "@/components/HorizontalDashedLine";
-import MobileSocialLink from "@/components/MobileSocialLink";
-import WorkExperience from "@/components/WorkExperience";
-import { Metadata } from "next";
+import Avatar from '@/components/Avatar';
+import DownloadPdfButton from '@/components/DownloadPdfButton';
+import Education from '@/components/Education';
+import HorizontalDashedLine from '@/components/HorizontalDashedLine';
+import MobileSocialLink from '@/components/MobileSocialLink';
+import WorkExperience from '@/components/WorkExperience';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "More about me and my work experience.",
+  title: 'About',
+  description: 'More about me and my work experience.',
 };
 
 export default function About() {

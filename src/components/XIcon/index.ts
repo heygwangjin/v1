@@ -1,2 +1,2 @@
-export * from "./XIcon";
-export { default } from "./XIcon";
+export * from './XIcon';
+export { default } from './XIcon';

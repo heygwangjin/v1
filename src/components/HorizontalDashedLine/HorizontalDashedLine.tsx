@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 interface HorizontalDashedLineProps {
   className?: string;
@@ -8,7 +8,7 @@ function HorizontalDashedLine({ className }: HorizontalDashedLineProps) {
   return (
     <div
       className={cn(
-        "w-full border border-dashed border-neutral-400 dark:border-neutral-700",
+        'w-full border border-dashed border-neutral-400 dark:border-neutral-700',
         className,
       )}
     />

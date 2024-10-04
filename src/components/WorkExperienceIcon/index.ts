@@ -1,2 +1,2 @@
-export * from "./WorkExperienceIcon";
-export { default } from "./WorkExperienceIcon";
+export * from './WorkExperienceIcon';
+export { default } from './WorkExperienceIcon';

@@ -1,6 +1,6 @@
-import { data } from "@/data";
+import { data } from '@/data';
 
-import EducationIcon from "@/components/EducationIcon";
+import EducationIcon from '@/components/EducationIcon';
 
 function Education() {
   return (
@@ -14,7 +14,7 @@ function Education() {
           const { school, url, degree, location, date, grade } = study;
           return (
             <div
-              key={"education-" + index}
+              key={'education-' + index}
               className="flex w-full flex-col items-start justify-start gap-1"
             >
               <h3 className="text-balance font-medium">{degree}</h3>
@@ -25,7 +25,7 @@ function Education() {
                   className="underline transition-colors duration-150 hover:text-foreground/80"
                 >
                   {school}
-                </a>{" "}
+                </a>{' '}
                 / {date}
               </p>
               <p className="text-sm text-foreground/50">Grade: {grade}</p>
