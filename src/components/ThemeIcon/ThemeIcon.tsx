@@ -12,9 +12,14 @@ function ThemeIcon({ theme }: ThemeIconProps) {
       viewBox="0 0 100 100"
       fill="currentColor"
       className={cn(
-        'm-px h-6 w-6 text-neutral-600 transition-all duration-150 group-hover:text-neutral-950 group-active:scale-75 dark:text-neutral-400 dark:group-hover:text-neutral-50',
-        'drop-shadow-none group-hover:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-hover:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]',
-        'group-focus:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))] dark:group-focus:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]',
+        `m-px h-6 w-6 text-neutral-600 transition-all duration-150
+        group-hover:text-neutral-950 group-active:scale-75 dark:text-neutral-400
+        dark:group-hover:text-neutral-50`,
+        `drop-shadow-none
+        group-hover:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))]
+        dark:group-hover:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]`,
+        `group-focus:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))]
+        dark:group-focus:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]`,
       )}
       style={{
         transform: 'translateZ(0)',

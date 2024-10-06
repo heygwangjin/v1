@@ -10,7 +10,9 @@ function DownloadIcon() {
       stroke="currentColor"
       className={cn(
         'size-3 transition-[filter] duration-150',
-        'drop-shadow-none group-hover:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))] dark:group-hover:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))]',
+        `drop-shadow-none
+        group-hover:[filter:drop-shadow(0px_0px_4px_rgba(250,250,250,1))]
+        dark:group-hover:[filter:drop-shadow(0px_0px_4px_rgba(10,_10,_10,_.5))]`,
       )}
     >
       <path

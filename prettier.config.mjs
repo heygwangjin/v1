@@ -10,9 +10,13 @@ const config = {
   bracketSameLine: false,
   arrowParens: 'avoid',
   plugins: [
+    // import('prettier-plugin-tailwindcss'),
     'prettier-plugin-organize-imports',
-    import('prettier-plugin-tailwindcss'),
+    'prettier-plugin-tailwindcss',
+    'prettier-plugin-classnames',
+    'prettier-plugin-merge',
   ],
+  endingPosition: 'absolute-with-indent',
 };
 
 export default config;

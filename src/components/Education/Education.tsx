@@ -22,7 +22,8 @@ function Education() {
                 <a
                   href={url}
                   target="_blank"
-                  className="underline transition-colors duration-150 hover:text-foreground/80"
+                  className="underline transition-colors duration-150
+                    hover:text-foreground/80"
                 >
                   {school}
                 </a>{' '}

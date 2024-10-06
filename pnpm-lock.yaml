@@ -80,6 +80,12 @@ importers:
       prettier:
         specifier: 3.2.5
         version: 3.2.5
+      prettier-plugin-classnames:
+        specifier: ^0.7.3
+        version: 0.7.3(prettier@3.2.5)
+      prettier-plugin-merge:
+        specifier: ^0.7.1
+        version: 0.7.1(prettier@3.2.5)
       prettier-plugin-organize-imports:
         specifier: ^3.2.4
         version: 3.2.4(prettier@3.2.5)(typescript@5.6.2)
@@ -1061,6 +1067,13 @@ packages:
       {
         integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==,
       }
+
+  diff@5.1.0:
+    resolution:
+      {
+        integrity: sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==,
+      }
+    engines: { node: '>=0.3.1' }
 
   dir-glob@3.0.1:
     resolution:
@@ -2427,6 +2440,31 @@ packages:
       }
     engines: { node: '>= 0.8.0' }
 
+  prettier-plugin-classnames@0.7.3:
+    resolution:
+      {
+        integrity: sha512-pl7RENikiCq0FpjyO/7XayLV49VXPGyBkbPnEmEkaicGweOnO0GrUaCeo2GvqB/rzERGvBRurB6/yQPF70WPTQ==,
+      }
+    engines: { node: '>=14' }
+    peerDependencies:
+      prettier: ^2 || ^3
+      prettier-plugin-astro: '*'
+      prettier-plugin-svelte: '*'
+    peerDependenciesMeta:
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+
+  prettier-plugin-merge@0.7.1:
+    resolution:
+      {
+        integrity: sha512-R3dSlv3kAlScjd/liWjTkGHcUrE4MBhPKKBxVOvHK7+FY2P5SEmLarZiD11VUEuaMRK0L7zqIurX6JcRYS9Y5Q==,
+      }
+    engines: { node: '>=14' }
+    peerDependencies:
+      prettier: ^2 || ^3
+
   prettier-plugin-organize-imports@3.2.4:
     resolution:
       {
@@ -3681,6 +3719,8 @@ snapshots:
 
   didyoumean@1.2.2: {}
 
+  diff@5.1.0: {}
+
   dir-glob@3.0.1:
     dependencies:
       path-type: 4.0.0
@@ -4614,6 +4654,15 @@ snapshots:
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
+
+  prettier-plugin-classnames@0.7.3(prettier@3.2.5):
+    dependencies:
+      prettier: 3.2.5
+
+  prettier-plugin-merge@0.7.1(prettier@3.2.5):
+    dependencies:
+      diff: 5.1.0
+      prettier: 3.2.5
 
   prettier-plugin-organize-imports@3.2.4(prettier@3.2.5)(typescript@5.6.2):
     dependencies:

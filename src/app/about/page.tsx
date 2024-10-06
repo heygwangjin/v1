@@ -13,8 +13,14 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="flex w-full justify-center px-4 pb-28 pt-8 sm:px-8 sm:pt-16 lg:pb-16 lg:pt-36 xl:px-0">
-      <div className="flex h-full w-full max-w-screen-sm flex-col items-center justify-start gap-6">
+    <main
+      className="flex w-full justify-center px-4 pb-28 pt-8 sm:px-8 sm:pt-16
+        lg:pb-16 lg:pt-36 xl:px-0"
+    >
+      <div
+        className="flex h-full w-full max-w-screen-sm flex-col items-center
+          justify-start gap-6"
+      >
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="relative h-24 w-24 sm:h-28 sm:w-28">
@@ -32,8 +38,10 @@ export default function About() {
           </div>
           <DownloadPdfButton href="/resume.pdf" label="Resume" />
         </div>
-
-        <div className="flex w-full flex-col items-center justify-between gap-2 break-words leading-7 text-foreground">
+        <div
+          className="flex w-full flex-col items-center justify-between gap-2
+            break-words leading-7 text-foreground"
+        >
           <p className="w-full">
             I am a software engineer passionate about web development and
             design. I worked at a startup agency where I developed web

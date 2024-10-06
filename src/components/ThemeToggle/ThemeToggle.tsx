@@ -34,16 +34,27 @@ function ThemeToggle({ initialTheme }: ThemeToggleProps) {
   }
 
   return (
-    <div className="relative z-0 shrink-0 rounded-full bg-neutral-200 p-px shadow-sm shadow-neutral-400 dark:border dark:border-neutral-600 dark:bg-neutral-800 dark:shadow-black">
+    <div
+      className="relative z-0 shrink-0 rounded-full bg-neutral-200 p-px
+        shadow-sm shadow-neutral-400 dark:border dark:border-neutral-600
+        dark:bg-neutral-800 dark:shadow-black"
+    >
       <button
-        className="group relative z-20 rounded-full bg-gradient-to-tl from-neutral-50 via-neutral-200 to-neutral-50 p-2 outline-none ring-neutral-950 focus-visible:ring-1  dark:from-neutral-925 dark:via-neutral-900 dark:to-neutral-925 dark:ring-neutral-50"
+        className="group relative z-20 rounded-full bg-gradient-to-tl
+          from-neutral-50 via-neutral-200 to-neutral-50 p-2 outline-none
+          ring-neutral-950 focus-visible:ring-1 dark:from-neutral-925
+          dark:via-neutral-900 dark:to-neutral-925 dark:ring-neutral-50"
         aria-label="Theme Control"
         onClick={handleClick}
       >
         <ThemeIcon theme={theme} />
         <VisuallyHidden>Toggle dark / light mode</VisuallyHidden>
       </button>
-      <div className="absolute left-0 top-0 -z-10 h-full w-full rounded-full bg-gradient-to-br from-transparent from-30% via-neutral-300 to-transparent to-60% dark:via-neutral-750" />
+      <div
+        className="absolute left-0 top-0 -z-10 h-full w-full rounded-full
+          bg-gradient-to-br from-transparent from-30% via-neutral-300
+          to-transparent to-60% dark:via-neutral-750"
+      />
     </div>
   );
 }
