@@ -33,7 +33,7 @@ export default function About() {
             <div>
               <h1 className="text-xl font-bold">Gwangjin Kim</h1>
               <p>Frontend Engineer</p>
-              <p className="text-sm text-foreground/60">Seoul, South Korea</p>
+              <p className="text-sm text-foreground/60">Suwon, South Korea</p>
             </div>
           </div>
           <DownloadPdfButton href="/resume-ko.pdf" label="Resume" />
