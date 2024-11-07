@@ -36,7 +36,7 @@ export default function About() {
               <p className="text-sm text-foreground/60">Seoul, South Korea</p>
             </div>
           </div>
-          <DownloadPdfButton href="/resume.pdf" label="Resume" />
+          <DownloadPdfButton href="/resume-ko.pdf" label="Resume" />
         </div>
         <div
           className="flex w-full flex-col items-center justify-between gap-2
