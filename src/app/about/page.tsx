@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div>
               <h1 className="text-xl font-bold">Gwangjin Kim</h1>
-              <p>Frontend Engineer</p>
+              <p>Junior Frontend Developer</p>
               <p className="text-sm text-foreground/60">Suwon, South Korea</p>
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function About() {
             break-words leading-7 text-foreground"
         >
           <p className="w-full">
-            I am a software engineer passionate about web development and
+            I am a software developer passionate about web development and
             design. I worked at a startup agency where I developed web
             applications from scratch, handling both design and client
             communication.

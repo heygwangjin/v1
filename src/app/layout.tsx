@@ -8,10 +8,10 @@ import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: {
-    default: 'heygwangjin · Frontend Engineer',
-    template: '%s | heygwangjin · Frontend Engineer',
+    default: 'heygwangjin · Frontend Developer',
+    template: '%s | heygwangjin · Frontend Developer',
   },
-  description: 'Frontend engineer experienced in web development',
+  description: 'Junior frontend developer experienced in web development',
   icons: {
     icon: '/favicon.png',
   },
