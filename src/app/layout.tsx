@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'heygwangjin · Frontend Developer',
     template: '%s | heygwangjin · Frontend Developer',
   },
-  description: 'Junior frontend developer experienced in web development',
+  description: 'Frontend developer experienced in web development',
   icons: {
     icon: '/favicon.png',
   },

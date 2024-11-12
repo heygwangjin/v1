@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div>
               <h1 className="text-xl font-bold">Gwangjin Kim</h1>
-              <p>Junior Frontend Developer</p>
+              <p>Frontend Developer</p>
               <p className="text-sm text-foreground/60">Suwon, South Korea</p>
             </div>
           </div>
