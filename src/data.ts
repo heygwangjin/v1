@@ -3,11 +3,18 @@ export const data = {
     {
       company: 'INSOMENIA',
       url: 'https://insomenia.com',
-      role: 'Junior Full Stack Engineer',
+      role: 'Junior Full Stack Developer',
       location: 'Seoul, South Korea',
-      date: '22.07 - 24.07 (2y 1m)',
+      date: '23.01 - 24.07 (1y 7m)',
       descriptions: [],
-      technologies: ['SvelteKit', 'Supabase', 'TailwindCSS', 'Vercel', 'Git'],
+      technologies: [
+        'Svelte',
+        'SvelteKit',
+        'Supabase',
+        'TailwindCSS',
+        'Vercel',
+        'Git',
+      ],
     },
   ],
   education: [
@@ -28,6 +35,10 @@ export const data = {
     {
       name: 'X',
       url: 'https://www.twitter.com/heygwangjin',
+    },
+    {
+      name: 'Bluesky',
+      url: 'https://bsky.app/profile/heygwangjin.com',
     },
   ],
 };

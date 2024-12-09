@@ -3,9 +3,10 @@ import Link from 'next/link';
 import GithubIcon from '@/components/GithubIcon';
 import MailIcon from '@/components/MailIcon';
 import XIcon from '@/components/XIcon';
+import BlueskyIcon from '@/components/BlueskyIcon';
 
 interface MobileSocialLinkProps {
-  type: 'github' | 'x' | 'mail';
+  type: 'github' | 'x' | 'bsky' | 'mail';
 }
 
 type socialLinksType = {
@@ -28,6 +29,10 @@ function MobileSocialLink({ type }: MobileSocialLinkProps) {
       href: 'https://www.twitter.com/heygwangjin',
       label: 'X',
     },
+    bsky: {
+      href: 'https://bsky.app/profile/heygwangjin.com',
+      label: 'Bluesky',
+    },
     mail: {
       href: 'mailto:heygwangjin@gmail.com',
       label: 'Mail',
@@ -48,6 +53,7 @@ function MobileSocialLink({ type }: MobileSocialLinkProps) {
     >
       {type === 'github' && <GithubIcon className="size-8" />}
       {type === 'x' && <XIcon className="size-8" />}
+      {type === 'bsky' && <BlueskyIcon className="size-8" />}
       {type === 'mail' && <MailIcon className="size-8" />}
     </Link>
   );

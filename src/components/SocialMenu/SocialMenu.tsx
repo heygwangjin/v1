@@ -3,6 +3,7 @@ import IconLinkWrapper from '@/components/IconLinkWrapper';
 import MailIcon from '@/components/MailIcon';
 import MenuWrapper from '@/components/MenuWrapper';
 import XIcon from '@/components/XIcon';
+import BlueskyIcon from '@/components/BlueskyIcon';
 
 function SocialMenu() {
   return (
@@ -16,6 +17,12 @@ function SocialMenu() {
         </IconLinkWrapper>
         <IconLinkWrapper href="https://twitter.com/heygwangjin" label="x">
           <XIcon />
+        </IconLinkWrapper>
+        <IconLinkWrapper
+          href="https://bsky.app/profile/heygwangjin.com"
+          label="bluesky"
+        >
+          <BlueskyIcon />
         </IconLinkWrapper>
         <IconLinkWrapper href="mailto:heygwangjin@gmail.com" label="mail">
           <MailIcon />
