@@ -16,6 +16,10 @@ function MainMenu() {
       href: '/about',
       label: 'About',
     },
+    {
+      href: '/blog',
+      label: 'Blog',
+    },
   ];
 
   const path = usePathname();
