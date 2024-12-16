@@ -34,7 +34,12 @@ export default function RootLayout({
         )}
       >
         <Navigator theme={theme} />
-        {children}
+        <main
+          className="mx-auto flex h-full w-full max-w-screen-sm justify-center
+            px-4 pb-28 pt-12 sm:px-8 sm:pt-16 lg:pb-16 lg:pt-36 xl:px-0"
+        >
+          <div className="h-full w-full max-w-screen-sm">{children}</div>
+        </main>
         <Analytics />
       </body>
     </html>
