@@ -31,7 +31,9 @@ export default function Blog() {
               </p>
             </a>
             <p className="mt-2 text-xs text-muted-foreground sm:text-sm">
-              <time dateTime={b.createdAt}>{formatDate(b.createdAt)}</time>
+              <time dateTime={b.createdAt}>
+                {formatDate(new Date(b.createdAt))}
+              </time>
             </p>
           </article>
         );
