@@ -1,6 +1,7 @@
 import VisuallyHidden from '@/components/VisuallyHidden';
 import { Metadata } from 'next';
 import { data } from '@/data';
+import { formatDate } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -30,7 +31,7 @@ export default function Blog() {
               </p>
             </a>
             <p className="mt-2 text-xs text-muted-foreground sm:text-sm">
-              <time dateTime={b.createdAt}>{b.createdAt}</time>
+              <time dateTime={b.createdAt}>{formatDate(b.createdAt)}</time>
             </p>
           </article>
         );
