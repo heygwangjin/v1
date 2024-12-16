@@ -12,7 +12,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
     h1: ({ children }) => (
-      <h1 className="w-full break-keep pb-4 text-2xl font-bold sm:text-3xl">
+      <h1 className="w-full break-keep pb-4 text-3xl font-bold sm:text-4xl">
         {children}
       </h1>
     ),
