@@ -18,8 +18,8 @@ function DownloadPdfButton({
       href={href}
       target="_blank"
       className={cn(
-        `group h-11 rounded-full bg-primary p-0.5 shadow-sm shadow-primary
-        outline-none ring-primary focus-visible:ring-1`,
+        `group h-11 rounded-full bg-foreground p-0.5 shadow-sm
+        focus-visible:ring-1`,
         className,
       )}
       aria-label="Download Resume"
@@ -30,9 +30,8 @@ function DownloadPdfButton({
         className={cn(
           `z-20 flex h-full w-full items-center justify-center gap-1
           rounded-full px-4`,
-          `text-primary-foreground/80 transition-colors duration-150
-          group-hover:text-primary-foreground`,
-          'transition-colors duration-150 group-focus:text-primary-foreground',
+          'text-background transition-colors duration-150 group-hover:scale-105',
+          'transition-colors duration-150 group-focus:text-foreground',
         )}
       >
         <span

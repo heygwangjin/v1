@@ -1,6 +1,7 @@
 import type { MDXComponents } from 'mdx/types';
 import Image, { ImageProps } from 'next/image';
 import Code from '@/components/Code';
+import HorizontalDashedLine from '@/components/HorizontalDashedLine';
 
 // This file allows you to provide custom React components
 // to be used in MDX files. You can import and use any
@@ -29,7 +30,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ol: ({ children }) => (
       <ol className="w-full list-decimal pb-4 pl-6">{children}</ol>
     ),
-    hr: () => <hr className="my-4" />,
+    hr: () => <HorizontalDashedLine className="my-4" />,
     code: ({ children }) => {
       return <Code>{children}</Code>;
     },

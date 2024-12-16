@@ -19,7 +19,7 @@ function WorkExperience() {
               className="flex w-full flex-col items-start justify-start gap-1"
             >
               <h3 className="font-medium">{role}</h3>
-              <p className="text-sm text-foreground/50">
+              <p className="text-sm text-muted-foreground">
                 <a
                   href={url}
                   target="_blank"

@@ -18,28 +18,24 @@ function Code({ children }: { children: any }) {
   }
 
   return (
-    <div className="rounded-lg pb-6 text-primary-foreground">
+    <div className="rounded-lg pb-6">
       <div
-        className="flex items-center justify-between rounded-t-lg bg-primary/90
-          px-4 py-2"
+        className="flex items-center justify-between rounded-t-lg
+          bg-foreground/90 px-4 py-2"
       >
-        <span className="text-primary-foreground">Code</span>
+        <span className="text-background">Code</span>
         <button
           type="button"
-          className={cn(
-            'text-primary-foreground',
-            !copied && 'hover:scale-110',
-          )}
+          className={cn('text-background', !copied && 'hover:scale-110')}
           onClick={handleCopy}
         >
           {copied ? 'Copied!' : 'Copy'}
         </button>
       </div>
       <pre
-        className="overflow-auto rounded-b-lg bg-primary p-4
-          text-primary-foreground"
+        className="overflow-auto rounded-b-lg bg-foreground p-4 text-background"
       >
-        <code ref={codeRef} className="bg-primary text-primary-foreground">
+        <code ref={codeRef} className="bg-foreground text-background">
           {children}
         </code>
       </pre>

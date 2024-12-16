@@ -27,13 +27,15 @@ export default function About() {
               <Avatar
                 src="/images/me.jpg"
                 alt="gwangjin's profile picture"
-                className="border border-dashed border-primary/70 p-1"
+                className="border border-dashed border-foreground/70 p-1"
               />
             </div>
             <div>
               <h1 className="text-xl font-bold">Gwangjin Kim</h1>
               <p>Frontend Developer</p>
-              <p className="text-sm text-foreground/60">Suwon, South Korea</p>
+              <p className="text-sm text-muted-foreground">
+                Suwon, South Korea
+              </p>
             </div>
           </div>
           <DownloadPdfButton href="/resume-ko.pdf" label="Resume" />

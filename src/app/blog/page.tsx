@@ -19,7 +19,7 @@ export default function Blog() {
           <article key={b.title} className="group w-full">
             <a href={b.pathname}>
               <h2
-                className="break-keep text-xl font-bold text-primary-foreground
+                className="break-keep text-xl font-bold text-foreground
                   group-hover:underline group-hover:underline-offset-4
                   sm:text-2xl"
               >

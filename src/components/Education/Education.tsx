@@ -18,7 +18,7 @@ function Education() {
               className="flex w-full flex-col items-start justify-start gap-1"
             >
               <h3 className="text-balance font-medium">{degree}</h3>
-              <p className="text-sm text-foreground/50">
+              <p className="text-sm text-muted-foreground">
                 <a
                   href={url}
                   target="_blank"
@@ -29,7 +29,7 @@ function Education() {
                 </a>{' '}
                 / {date}
               </p>
-              <p className="text-sm text-foreground/50">Grade: {grade}</p>
+              <p className="text-sm text-muted-foreground">Grade: {grade}</p>
             </div>
           );
         })}
