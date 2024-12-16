@@ -2,19 +2,18 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Code({ children }: { children: any }) {
   const [copied, setCopied] = React.useState(false);
-  const codeRef = React.useRef<HTMLElement>(null);
 
   function handleCopy() {
-    if (codeRef.current) {
-      const codeText = codeRef.current.innerText;
-      navigator.clipboard.writeText(codeText).then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      });
-    }
+    const codeText = children;
+    navigator.clipboard.writeText(codeText).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
   }
 
   return (
@@ -32,13 +31,20 @@ function Code({ children }: { children: any }) {
           {copied ? 'Copied!' : 'Copy'}
         </button>
       </div>
-      <pre
-        className="overflow-auto rounded-b-lg bg-foreground p-4 text-background"
+      <SyntaxHighlighter
+        language="javascript"
+        style={dracula}
+        customStyle={{
+          margin: 0,
+          background: '#222222',
+          borderTopLeftRadius: 0,
+          borderTopRightRadius: 0,
+          borderBottomLeftRadius: '8px',
+          borderBottomRightRadius: '8px',
+        }}
       >
-        <code ref={codeRef} className="bg-foreground text-background">
-          {children}
-        </code>
-      </pre>
+        {children}
+      </SyntaxHighlighter>
     </div>
   );
 }
