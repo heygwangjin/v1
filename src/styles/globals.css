@@ -9,6 +9,13 @@
 [data-color-theme='light'] *::selection {
   @apply !bg-neutral-950 !text-neutral-50;
 }
+
+/* Code 컴포넌트에서 예외 처리 */
+[data-color-theme='dark'] code::selection,
+[data-color-theme='light'] code::selection {
+  @apply !bg-blue-400;
+}
+
 @layer base {
   :root {
     --background: 210 8% 95%; /* #f2f3f4 */
