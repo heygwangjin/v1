@@ -41,4 +41,12 @@ export const data = {
       url: 'https://bsky.app/profile/heygwangjin.com',
     },
   ],
+  blog: [
+    {
+      title: '험난한 오픈소스 컨트리뷰션',
+      subtitle: 'iOS 사파리에서 코드미러 에디터의 커서 색깔 버그 수정하기',
+      pathname: '/blog/challenging-open-source-contribution',
+      createdAt: '2024-12-17',
+    },
+  ],
 };

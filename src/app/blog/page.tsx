@@ -1,5 +1,6 @@
 import VisuallyHidden from '@/components/VisuallyHidden';
 import { Metadata } from 'next';
+import { data } from '@/data';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -13,22 +14,27 @@ export default function Blog() {
       <VisuallyHidden>
         <h1>Blog</h1>
       </VisuallyHidden>
-      <article className="group w-full">
-        <a href="/blog/challenging-open-source-contribution">
-          <h2
-            className="break-keep text-xl font-bold group-hover:underline
-              group-hover:underline-offset-4 sm:text-2xl"
-          >
-            험난한 오픈소스 컨트리뷰션
-          </h2>
-          <p className="mt-1 text-sm text-neutral-500 sm:text-base">
-            iOS 사파리에서 코드미러 에디터 커서 색깔 버그 수정하기
-          </p>
-        </a>
-        <p className="mt-2 text-xs text-neutral-500 sm:text-sm">
-          <time dateTime="2024-12-16">2024.12.16.</time>
-        </p>
-      </article>
+      {data.blog.map(b => {
+        return (
+          <article key={b.title} className="group w-full">
+            <a href={b.pathname}>
+              <h2
+                className="break-keep text-xl font-bold text-primary-foreground
+                  group-hover:underline group-hover:underline-offset-4
+                  sm:text-2xl"
+              >
+                {b.title}
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground sm:text-base">
+                {b.subtitle}
+              </p>
+            </a>
+            <p className="mt-2 text-xs text-muted-foreground sm:text-sm">
+              <time dateTime={b.createdAt}>{b.createdAt}</time>
+            </p>
+          </article>
+        );
+      })}
     </div>
   );
 }
