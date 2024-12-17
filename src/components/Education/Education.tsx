@@ -29,7 +29,7 @@ function Education() {
                 </a>{' '}
                 / {date}
               </p>
-              <p className="text-sm text-muted-foreground">Grade: {grade}</p>
+              <p className="text-sm text-foreground/50">Grade: {grade}/4.5</p>
             </div>
           );
         })}

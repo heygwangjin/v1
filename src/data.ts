@@ -5,7 +5,7 @@ export const data = {
       url: 'https://insomenia.com',
       role: 'Junior Full Stack Developer',
       location: 'Seoul, South Korea',
-      date: '23.01 - 24.07 (1y 7m)',
+      date: '2023.01 - 2024.07 (1y 7m)',
       descriptions: [],
       technologies: [
         'Svelte',
@@ -23,7 +23,7 @@ export const data = {
       url: 'https://www.ajou.ac.kr',
       degree: 'Bachelor of Digital Media',
       location: 'Suwon, South Korea',
-      date: '16.03 - 23.02',
+      date: '2016.03 - 2023.02',
       grade: '3.87',
     },
   ],
