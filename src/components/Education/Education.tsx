@@ -11,7 +11,7 @@ function Education() {
       </div>
       <div className="grid grid-cols-1 gap-4">
         {data.education.map((study, index) => {
-          const { school, url, degree, location, date, grade } = study;
+          const { school, url, degree, date, gpa } = study;
           return (
             <div
               key={'education-' + index}
@@ -29,7 +29,7 @@ function Education() {
                 </a>{' '}
                 / {date}
               </p>
-              <p className="text-sm text-foreground/50">Grade: {grade}/4.5</p>
+              <p className="text-sm text-foreground/50">GPA: {gpa}</p>
             </div>
           );
         })}
