@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Blog() {
   return (
-    <div className="flex-col items-center justify-start gap-6">
+    <div className="flex h-full w-full flex-col items-center justify-start gap-6">
       <VisuallyHidden>
         <h1>Blog</h1>
       </VisuallyHidden>
