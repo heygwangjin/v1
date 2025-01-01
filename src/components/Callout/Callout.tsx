@@ -28,9 +28,9 @@ interface CalloutProps {
 
 function Callout({ children, type = 'default' }: CalloutProps): ReactElement {
   return (
-    <div className="mt-8 flex h-fit break-keep">
-      <div className={cn('mr-2 w-1', classes[type])}></div>
-      <div>{children}</div>
+    <div className="mt-8 flex h-fit min-h-12">
+      <div className={cn('mr-2 w-2 sm:w-1', classes[type])}></div>
+      <div className="flex items-center break-keep">{children}</div>
     </div>
   );
 }
