@@ -16,11 +16,17 @@ function MainMenu() {
       href: '/about',
       label: 'About',
     },
+    {
+      href: '/blog',
+      label: 'Blog',
+    },
   ];
 
-  const path = usePathname();
+  const pathname = usePathname();
 
-  const activeLink = links.find(({ href }) => href === path);
+  const activeLink = links.find(
+    ({ href }) => href === `/${pathname.split('/')[1]}`,
+  );
 
   return (
     <MenuWrapper>
@@ -34,11 +40,11 @@ function MainMenu() {
               href={href}
               className={cn(
                 `group rounded-full outline-none transition-colors duration-300
-                hover:text-neutral-950 focus-visible:text-neutral-950
-                dark:hover:text-neutral-50 dark:focus-visible:text-neutral-50`,
+                hover:text-foreground focus-visible:text-foreground
+                dark:hover:text-foreground dark:focus-visible:text-foreground`,
                 activeLink?.href === href
-                  ? 'font-semibold text-neutral-950 dark:text-neutral-50'
-                  : 'text-neutral-500 dark:text-neutral-400',
+                  ? 'font-semibold text-foreground'
+                  : 'text-muted-foreground',
               )}
             >
               <span
