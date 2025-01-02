@@ -5,11 +5,28 @@ import { cn } from '@/lib/utils';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-function Code({ children }: { children: any }) {
+const Languages = {
+  js: 'javascript',
+  ts: 'typescript',
+  css: 'css',
+  scss: 'scss',
+  sh: 'bash',
+  vim: 'vim',
+};
+
+type LanguageType = keyof typeof Languages;
+
+function Code({
+  children,
+  language,
+}: {
+  children: any;
+  language: LanguageType;
+}) {
   const [copied, setCopied] = React.useState(false);
 
   function handleCopy() {
-    const codeText = children;
+    const codeText = children.trim();
     navigator.clipboard.writeText(codeText).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
@@ -17,22 +34,22 @@ function Code({ children }: { children: any }) {
   }
 
   return (
-    <div className="rounded-lg pb-6">
+    <div className="mt-6 rounded-lg">
       <div
         className="flex items-center justify-between rounded-t-lg
           bg-foreground/90 px-4 py-2"
       >
-        <span className="text-background">Code</span>
+        <span className="text-background">{Languages[language]}</span>
         <button
           type="button"
           className={cn('text-background', !copied && 'hover:scale-110')}
           onClick={handleCopy}
         >
-          {copied ? 'Copied!' : 'Copy'}
+          {copied ? 'copied!' : 'copy'}
         </button>
       </div>
       <SyntaxHighlighter
-        language="javascript"
+        language={Languages[language]}
         style={dracula}
         customStyle={{
           margin: 0,
