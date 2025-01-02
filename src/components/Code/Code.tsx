@@ -3,7 +3,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const Languages = {
   js: 'javascript',
@@ -50,7 +50,7 @@ function Code({
       </div>
       <SyntaxHighlighter
         language={Languages[language]}
-        style={dracula}
+        style={oneDark}
         customStyle={{
           margin: 0,
           background: '#222222',
