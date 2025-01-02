@@ -4,7 +4,9 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import CopyIcon from '@/components/CopyIcon';
 
+const COPY_DELAY = 2000;
 const Languages = {
   js: 'javascript',
   ts: 'typescript',
@@ -12,7 +14,7 @@ const Languages = {
   scss: 'scss',
   sh: 'bash',
   vim: 'vim',
-};
+} as const;
 
 type LanguageType = keyof typeof Languages;
 
@@ -20,44 +22,51 @@ function Code({
   children,
   language,
 }: {
-  children: any;
+  children: string;
   language: LanguageType;
 }) {
   const [copied, setCopied] = React.useState(false);
+  const timerRef = React.useRef<NodeJS.Timeout>();
 
-  function handleCopy() {
+  async function handleCopy() {
     const codeText = children.trim();
-    navigator.clipboard.writeText(codeText).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
+    await navigator.clipboard.writeText(codeText);
+    setCopied(true);
+
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+
+    timerRef.current = setTimeout(() => setCopied(false), COPY_DELAY);
   }
 
+  // Clear the timer when the component unmounts
+  React.useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="mt-6 rounded-lg">
-      <div
-        className="flex items-center justify-between rounded-t-lg
-          bg-foreground/90 px-4 py-2"
+    <div className="relative mt-6">
+      <button
+        type="button"
+        className={cn(
+          'absolute right-3 top-3 z-10 text-white',
+          !copied && 'hover:scale-110',
+        )}
+        onClick={handleCopy}
       >
-        <span className="text-background">{Languages[language]}</span>
-        <button
-          type="button"
-          className={cn('text-background', !copied && 'hover:scale-110')}
-          onClick={handleCopy}
-        >
-          {copied ? 'copied!' : 'copy'}
-        </button>
-      </div>
+        {copied ? 'Copied!' : <CopyIcon />}
+      </button>
       <SyntaxHighlighter
         language={Languages[language]}
         style={oneDark}
         customStyle={{
           margin: 0,
-          background: '#222222',
-          borderTopLeftRadius: 0,
-          borderTopRightRadius: 0,
-          borderBottomLeftRadius: '8px',
-          borderBottomRightRadius: '8px',
+          borderRadius: '4px',
         }}
       >
         {children}
