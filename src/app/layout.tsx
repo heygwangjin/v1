@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = 'force-static';
+
 export default function RootLayout({
   children,
 }: Readonly<{
