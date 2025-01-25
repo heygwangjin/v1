@@ -5,6 +5,7 @@ import '@/styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: {
@@ -43,6 +44,7 @@ export default function RootLayout({
           {children}
         </main>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
