@@ -31,7 +31,7 @@ function DownloadPdfButton({
           `z-20 flex h-full w-full items-center justify-center gap-1
           rounded-full px-4`,
           'text-background transition-colors duration-150 group-hover:scale-105',
-          'transition-colors duration-150 group-focus:text-foreground',
+          'transition-colors duration-150',
         )}
       >
         <span

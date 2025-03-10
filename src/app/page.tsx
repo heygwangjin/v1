@@ -1,9 +1,20 @@
 import Avatar from '@/components/Avatar';
+import DownloadIcon from '@/components/DownloadIcon';
 import DownloadPdfButton from '@/components/DownloadPdfButton';
 import Education from '@/components/Education';
 import HorizontalDashedLine from '@/components/HorizontalDashedLine';
 import MobileSocialLink from '@/components/MobileSocialLink';
 import WorkExperience from '@/components/WorkExperience';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { cn } from '@/lib/utils';
+import { Cross2Icon } from '@radix-ui/react-icons';
 
 export default function Home() {
   return (
@@ -23,7 +34,54 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">Suwon, South Korea</p>
           </div>
         </div>
-        <DownloadPdfButton href="/resume-ko.pdf" label="Resume" />
+        <Dialog>
+          <DialogTrigger asChild>
+            <button
+              className={cn(
+                `group h-11 rounded-full bg-foreground p-0.5 shadow-sm
+                focus-visible:ring-1`,
+              )}
+              aria-label="Open a modal to select a resume"
+            >
+              <div
+                className={cn(
+                  `z-20 flex h-full w-full items-center justify-center gap-1
+                  rounded-full px-4`,
+                  `text-background transition-colors duration-150
+                  group-hover:scale-105`,
+                  'transition-colors duration-150',
+                )}
+              >
+                <span
+                  className={cn(
+                    'z-30 text-sm',
+                    `[text-shadow:_0_0_1.25rem_rgba(250,250,250,0)]
+                    dark:[text-shadow:0_0_0.75rem_rgba(10,10,10,0)]`,
+                    `group-hover:[text-shadow:_0_0_1.25rem_rgba(250,250,250,1)]
+                    dark:group-hover:[text-shadow:0_0_0.75rem_rgba(10,10,10,1)]`,
+                    `group-focus:[text-shadow:_0_0_1.25rem_rgba(250,250,250,1)]
+                    dark:group-focus:[text-shadow:0_0_0.75rem_rgba(10,10,10,1)]`,
+                    'transition-[text-shadow] duration-300',
+                  )}
+                >
+                  Resume
+                </span>
+                <DownloadIcon />
+              </div>
+            </button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle className="mb-4 text-center">
+                Select a resume language to download
+              </DialogTitle>
+              <DialogDescription className="flex justify-center gap-4">
+                <DownloadPdfButton href="/resume-ko.pdf" label="Resume-ko" />
+                <DownloadPdfButton href="/resume-en.pdf" label="Resume-en" />
+              </DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
       <div
         className="flex w-full flex-col items-center justify-between gap-2
